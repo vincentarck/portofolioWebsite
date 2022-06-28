@@ -30,11 +30,12 @@ const sideVariants = {
   },
 };
 export default function Sidebar() {
-  const [open, cycleOpen] = useCycle(false, true);
+  // const [open, cycleOpen] = useCycle(false, true);
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <main>
       <AnimatePresence>
-        {open && (
+        {isOpen && (
           <motion.aside
             initial={{ width: 0 }}
             animate={{
@@ -59,7 +60,7 @@ export default function Sidebar() {
                   href={to}
                   whileHover={{ scale: 1.1 }}
                   variants={itemVariants}
-                  onClick={cycleOpen}
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   {name}
                 </motion.a>
@@ -69,8 +70,8 @@ export default function Sidebar() {
         )}
       </AnimatePresence>
       <div className="absolute top-[-30px] left-5 z-30">
-        <button onClick={cycleOpen}>
-          {!open ? <ShowMenu /> : <CloseMenu />}
+        <button onClick={() => setIsOpen(!isOpen)}>
+          {!isOpen ? <ShowMenu /> : <CloseMenu />}
         </button>
       </div>
     </main>
