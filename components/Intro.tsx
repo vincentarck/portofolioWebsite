@@ -1,9 +1,10 @@
 import React from "react";
-
+import Development from "./Development";
 function Introm() {
   return (
-    <div className="space-y-8 sm:mx-auto xl:mx-28 min-h-[80vh]">
-      <div className="flex flex-col space-y-9 xl:max-w-[70%]">
+    <div className="space-y-8 sm:mx-auto xl:mx-28 min-h-[80vh] flex items-center justify-center 
+    flex-col 2xl:flex-row lg:mx-0">
+      <div className="flex flex-col space-y-9 w-full">
         <p className="firstTitle">Hi, my name is</p>
         <h1 className="name">Vincent Laurensius Hambaya.</h1>
         <h2 className="name text-slate text-5xl">
@@ -21,6 +22,9 @@ function Introm() {
           </a>
           .
         </p>
+      </div>
+      <div className="w-full sm:w-3/5 2xl:w-4/6 relative z-10">
+        <Development />
       </div>
     </div>
   );
