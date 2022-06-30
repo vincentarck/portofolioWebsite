@@ -4,7 +4,8 @@
 
 @layer base{
     body{
-        @apply bg-navy font-sans h-[300vh]
+        @apply bg-navy font-sans scrollbar-thin scrollbar-track-lightNavy
+        scrollbar-thumb-green
     }
 }
 
@@ -58,5 +59,14 @@
     }
     .intro{
         @apply sm:w-[70%] 2xl:w-[70%]
+    }
+}
+
+@layer utilities{
+    .scrollbar-thin::-webkit-scrollbar {
+        height:2px;
+    }
+    .scrollbar-thumb-green::-webkit-scrollbar-thumb{
+        border-radius:10px;
     }
 }

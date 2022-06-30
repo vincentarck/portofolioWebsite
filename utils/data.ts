@@ -1,6 +1,19 @@
 export const memory = [
   {
     type: "t1",
+    responsibility: "System Developer",
+    company: "Tokeninlah",
+    url: "https://www.tokeninlah.com/",
+    time: "July 2022 - Present",
+    desc: [
+      "Develop the features needed by the client and server",
+      "Testing the features that have been made by colleagues",
+      "Help think of a solution to a problem in development and implementation",
+      "Support the system implementation process",
+    ],
+  },
+  {
+    type: "t2",
     responsibility: "Front End Web",
     company: "United Tractors",
     url: "https://www.unitedtractors.com/en/company-overview/",
@@ -13,7 +26,7 @@ export const memory = [
     ],
   },
   {
-    type: "t2",
+    type: "t3",
     responsibility: "React Developer Students",
     company: "PRO A DTS Kominfo",
     url: "https://digitalent.kominfo.go.id/",
@@ -25,7 +38,7 @@ export const memory = [
     ],
   },
   {
-    type: "t3",
+    type: "t4",
     responsibility: "Backend Students",
     company: "Generasi Gigih by Gojek",
     url: "https://www.anakbangsabisa.org/generasi-gigih/",

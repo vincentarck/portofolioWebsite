@@ -11,7 +11,8 @@ import Particle from "../components/Particle";
 import Sidebar from "../components/Sidebar";
 const Home: NextPage = () => {
   return (
-    <div className="space-y-16 relative">
+    <div className="space-y-16 relative !scrollbar-thin !scrollbar-track-transparent
+    !scrollbar-thumb-green">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

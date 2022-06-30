@@ -14,10 +14,11 @@ function Experience() {
       <h1 className="title relative">
         Where I've Learned and Worked <div className="divider"></div>
       </h1>
-      <div className="flex flex-col max-w-full space-y-4
-      sm:my-9 sm:gap-x-6 sm:flex-row">
+      <div className="flex flex-col max-w-full
+      sm:my-9 sm:gap-x-6 sm:flex-row sm:items-start">
         <div className="flex overflow-x-auto max-w-full 
-        sm:flex-1 sm:flex-wrap sm:h-fit font-mono">
+        sm:flex-1 sm:flex-wrap sm:h-fit font-mono scrollbar-thin !scrollbar-track-transparent
+        !scrollbar-thumb-green">
           {memory.map((data, ind) => {
             return (
               <button
