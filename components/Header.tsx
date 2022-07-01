@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import resume from "../assets/resume.pdf";
 
 function Header() {
   return (
@@ -22,7 +23,13 @@ function Header() {
           </Link>
 
           <Link href="/#contact">
-            <button className="downloadResume">Resume</button>
+            <button className="downloadResume"
+            onClick={() => {
+              const FileSaver = require("file-saver");
+              FileSaver.saveAs("https://docdro.id/wU39d6U", "test.html")
+            }}>
+              Resume
+            </button>
           </Link>
         </ol>
       </header>

@@ -4,8 +4,8 @@
 
 @layer base{
     body{
-        @apply bg-navy font-sans scrollbar-thin scrollbar-track-lightNavy
-        scrollbar-thumb-green
+        @apply bg-navy font-sans lg:scrollbar-thin lg:scrollbar-track-lightNavy
+        lg:scrollbar-thumb-green
     }
 }
 

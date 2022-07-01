@@ -14,7 +14,7 @@ function Work() {
         works.map((work, i) => {
           const pos = i % 2 === 0;
           return (
-            <div>
+            <div key={i}>
               <div
                 className={`flex flex-col md:flex-row w-full ${
                   pos ? "md:justify-start" : "md:justify-end"
@@ -50,7 +50,7 @@ function Work() {
           text-slate text-xs"
                   >
                     {work.stacks.map((tech) => (
-                      <span>{tech}</span>
+                      <span key={tech}>{tech}</span>
                     ))}
                   </div>
 
