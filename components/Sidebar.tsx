@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import ShowMenu from "./showMenu";
 import CloseMenu from "./CloseMenu";
+import resume from "../assets/resume.pdf";
+
 const links = [
   { name: "About", to: "#about", id: 1 },
   { name: "Experience", to: "#exp", id: 2 },
   { name: "Work", to: "#work", id: 3 },
   { name: "Contact", to: "#", id: 4 },
-  { name:"Resume", to:"#", id:5}
+  { name:"Resume", to:"https://docdro.id/wU39d6U", id:5}
 ];
 const itemVariants = {
   closed: {
@@ -58,6 +60,7 @@ export default function Sidebar() {
                 <motion.a
                   key={id}
                   href={to}
+                  target="_blank"
                   whileHover={{ scale: 1.1 }}
                   variants={itemVariants}
                   onClick={() => setIsOpen(!isOpen)}
