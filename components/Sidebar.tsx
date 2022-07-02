@@ -9,7 +9,7 @@ const links = [
   { name: "Experience", to: "#exp", id: 2 },
   { name: "Work", to: "#work", id: 3 },
   { name: "Contact", to: "#", id: 4 },
-  { name:"Resume", to:"https://docdro.id/wU39d6U", id:5}
+  { name:"Resume", to:"https://docdro.id/8E6KP0m", id:5}
 ];
 const itemVariants = {
   closed: {
