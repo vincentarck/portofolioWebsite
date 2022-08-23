@@ -53,7 +53,6 @@ function Work() {
                       <span key={tech}>{tech}</span>
                     ))}
                   </div>
-
                   <div
                     className={`flex gap-x-6 bottom-[-50px] ${
                       pos ? "md:justify-end" : "md:justify-start"

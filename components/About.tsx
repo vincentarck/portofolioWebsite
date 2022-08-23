@@ -39,9 +39,9 @@ function About() {
         </div>
         <div className="flex-[2] relative h-fit">
           <img
-            src="/profile.jpeg"
+            src="/profile.png"
             alt="profile"
-            className="mt-12 lg:mt-0 sm:w-[60%] md:w-[70%] lg:w-full h-auto m-auto"
+            className="mt-12 lg:mt-0 sm:w-[60%] md:w-[70%] lg:w-full h-[50%] object-cover m-auto"
           />
           <div
             className="shadowGreen
